@@ -1,0 +1,12 @@
+[Unit]
+Description=Nzbget container
+Author=Michael Mansell
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a nzbget
+ExecStop=/usr/bin/docker stop -t 2 nzbget
+
+[Install]
+WantedBy=local.target

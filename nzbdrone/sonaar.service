@@ -1,0 +1,12 @@
+[Unit]
+Description=NzbDrone container
+Author=Michael Mansell
+After=docker.service nzbget.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a nzbdrone
+ExecStop=/usr/bin/docker stop -t 2 nzbdrone
+
+[Install]
+WantedBy=local.target
