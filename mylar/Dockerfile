@@ -1,6 +1,5 @@
 FROM ubuntu:trusty
 MAINTAINER Michael Mansell <michael.mansell@gmail.com>
-# forked from aostanin/dockerfiles/services/couchpotato
 
 ENV LANG en_US.UTF-8
 RUN locale-gen $LANG
