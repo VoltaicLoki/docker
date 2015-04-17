@@ -1,0 +1,12 @@
+[Unit]
+Description=Sonarr container
+Author=Michael Mansell
+After=docker.service nzbget.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a sonarr
+ExecStop=/usr/bin/docker stop -t 2 sonarr
+
+[Install]
+WantedBy=local.target
