@@ -3,7 +3,7 @@ MAINTAINER Michael Mansell <michael.mansell@gmail.com>
 # forked from aostanin/nzbget
 
 ENV LANG en_US.UTF-8
-ENV VERSION 15.0
+ENV VERSION 14.2
 
 RUN locale-gen $LANG
 
