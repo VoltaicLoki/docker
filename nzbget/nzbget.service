@@ -1,6 +1,7 @@
 [Unit]
-Description=Nzbget container
+Description=Nzbget Container
 Author=Michael Mansell
+Requires=docker.service
 After=docker.service
 
 [Service]

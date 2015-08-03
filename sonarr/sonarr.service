@@ -1,6 +1,7 @@
 [Unit]
-Description=Sonarr container
+Description=Sonarr Container
 Author=Michael Mansell
+Requires=docker.service
 After=docker.service nzbget.service
 
 [Service]
